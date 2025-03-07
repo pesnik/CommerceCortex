@@ -52,6 +52,85 @@ CommerceCortex is your AI-powered brain for e-commerce. It processes data from r
 
 ---
 
+## 📂 Repository Structure
+
+```
+CommerceCortex/
+├── data-engineering/                 # Data pipelines and workflows
+│   ├── ingestion/                    # Scripts and configs for data ingestion
+│   │   ├── scripts/
+│   │   └── config/
+│   ├── transformation/               # Data transformation logic
+│   │   ├── scripts/
+│   │   └── config/
+│   ├── loading/                      # Data loading into storage
+│   │   ├── scripts/
+│   │   └── config/
+│   ├── airflow/                      # Apache Airflow for workflow orchestration
+│   │   ├── dags/                     # Directed Acyclic Graphs for workflows
+│   │   └── plugins/                  # Custom Airflow plugins
+│   └── data/                         # Datasets and storage
+│       ├── raw/                      # Raw, unprocessed data
+│       ├── processed/                # Cleaned and transformed data
+│       └── external/                 # Third-party or external datasets
+├── analytics-models/                 # AI and machine learning models
+│   ├── recommendation/               # Recommendation system components
+│   │   ├── data/                     # Datasets specific to recommendations
+│   │   ├── models/                   # Trained model artifacts
+│   │   ├── notebooks/                # Jupyter notebooks for experimentation
+│   │   └── scripts/                  # Training and evaluation scripts
+│   ├── forecasting/                  # Demand forecasting components
+│   │   ├── data/
+│   │   ├── models/
+│   │   ├── notebooks/
+│   │   └── scripts/
+│   ├── segmentation/                 # Customer segmentation components
+│   │   ├── data/
+│   │   ├── models/
+│   │   ├── notebooks/
+│   │   └── scripts/
+│   └── common/                       # Shared utilities and evaluation tools
+│       ├── utils/                    # Helper functions and modules
+│       └── evaluation/               # Metrics and evaluation scripts
+├── dashboards/                       # BI dashboards and visualization tools
+│   ├── sales/                        # Sales monitoring dashboard
+│   │   ├── config/                   # Configuration files (e.g., for Tableau, Power BI)
+│   │   └── assets/                   # Static assets (images, styles)
+│   ├── inventory/                    # Inventory management dashboard
+│   │   ├── config/
+│   │   └── assets/
+│   ├── customers/                    # Customer analytics dashboard
+│   │   ├── config/
+│   │   └── assets/
+│   └── app.py                        # Custom dashboard app (e.g., Dash or Streamlit)
+├── docs/                             # Project documentation
+│   ├── getting-started.md            # Setup and usage guide
+│   ├── contributing.md               # Contribution guidelines
+│   └── ...                           # Additional docs (API, architecture, etc.)
+├── scripts/                          # Utility scripts for project management
+│   ├── init_db.py                    # Database initialization script
+│   └── ...                           # Other automation scripts
+├── tests/                            # Unit and integration tests
+│   ├── unit/                         # Unit tests for individual components
+│   └── integration/                  # Integration tests for workflows
+├── examples/                         # Example use cases and tutorials
+│   └── ...                           # Sample scripts or notebooks
+├── ci/                               # Continuous Integration workflows
+│   └── workflows/                    # GitHub Actions or similar
+│       ├── build.yml                 # Build pipeline
+│       ├── test.yml                  # Test pipeline
+│       └── deploy.yml                # Deployment pipeline
+├── .dvc/                             # Data Version Control (DVC) configuration
+├── dvc.yaml                          # DVC pipeline definitions
+├── .gitignore                        # Git ignore rules
+├── README.md                         # Project overview and setup instructions
+├── LICENSE                           # Open-source license (e.g., MIT)
+├── pyproject.toml                    # Python project configuration (Poetry)
+└── docker-compose.yml                # Docker setup for local development
+```
+
+---
+
 ## Getting Started
 
 ### Prerequisites
